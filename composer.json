@@ -18,8 +18,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Vipul\\CI3ToCI4Compatible\\": "src//"
-        }
+            "Vipul\\CI3ToCI4Compatible\\": "src/CI3ToCI4Compatible"
+        },
+        "files": [
+            "src/CI3Compatible/bootstrap.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

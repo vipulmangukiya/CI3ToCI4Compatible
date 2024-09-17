@@ -34,4 +34,28 @@ class CI_DB extends CI_DB_query_builder
     {
         return $this->db->affectedRows();
     }
+    
+    /**
+	 * LIMIT
+	 *
+	 * @param	int	$value	LIMIT value
+	 * @param	int	$offset	OFFSET value
+	 * @return	CI_DB_query_builder
+	 */
+    public function limit($value, $offset = 0)
+	{
+		is_null($value) OR $this->qb_limit = (int) $value;
+		empty($offset) OR $this->qb_offset = (int) $offset;
+
+		return $this;
+	}
+
+    public function escape_like_str($str)
+	{
+		return $this->escape_str($str, TRUE);
+	}
+    protected function escape_str($str)
+	{
+		return str_replace("'", "''", remove_invisible_characters($str, FALSE));
+	}
 }
