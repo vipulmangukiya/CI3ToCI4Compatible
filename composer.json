@@ -1,0 +1,29 @@
+{
+    "name": "vipul/ci3-to-ci4-compatible",
+    "description": "A package to help migrate CodeIgniter 3 projects to CodeIgniter 4 with additional compatibility features",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vipul",
+            "email": "mr.vipulmangukiya@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "codeigniter4/framework": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vipul\\CI3ToCI4Compatible\\": "src//"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vipul\\CI3ToCI4Compatible\\Tests\\": "tests//"
+        }
+    }
+}
