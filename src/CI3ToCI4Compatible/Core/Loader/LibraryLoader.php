@@ -11,10 +11,10 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core\Loader;
+namespace Durva\CI3ToCI4Compatible\Core\Loader;
 
-use Vipul\CI3ToCI4Compatible\Core\Loader\ClassResolver\LibraryResolver;
-use Vipul\CI3ToCI4Compatible\Internal\DebugLog;
+use Durva\CI3ToCI4Compatible\Core\Loader\ClassResolver\LibraryResolver;
+use Durva\CI3ToCI4Compatible\Internal\DebugLog;
 use ReflectionObject;
 
 use function array_key_exists;

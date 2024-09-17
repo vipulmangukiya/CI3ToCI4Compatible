@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core\Loader;
+namespace Durva\CI3ToCI4Compatible\Core\Loader;
 
 use Config\Database;
-use Vipul\CI3ToCI4Compatible\Database\CI_DB;
-use Vipul\CI3ToCI4Compatible\Database\CI_DB_forge;
+use Durva\CI3ToCI4Compatible\Database\CI_DB;
+use Durva\CI3ToCI4Compatible\Database\CI_DB_forge;
 
 class DatabaseLoader
 {

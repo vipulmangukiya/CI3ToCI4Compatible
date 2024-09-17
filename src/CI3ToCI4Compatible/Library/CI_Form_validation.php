@@ -11,14 +11,14 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Library;
+namespace Durva\CI3ToCI4Compatible\Library;
 
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\Validation\Validation;
 use Config\Services;
 use Config\Validation as ConfigValidation;
-use Vipul\CI3ToCI4Compatible\Exception\NotImplementedException;
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\NotImplementedException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
 
 use function get_instance;
 use function is_array;

@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-use Vipul\CI3ToCI4Compatible\Core\CoreLoader;
+use Durva\CI3ToCI4Compatible\Core\CoreLoader;
 
 require __DIR__ . '/../CI3ToCI4Compatible/Core/get_instance.php';
 require __DIR__ . '/../CI3ToCI4Compatible/Core/Common.php';

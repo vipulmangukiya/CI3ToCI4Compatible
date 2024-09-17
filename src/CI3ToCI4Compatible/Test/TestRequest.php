@@ -11,14 +11,14 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Test;
+namespace Durva\CI3ToCI4Compatible\Test;
 
 use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\HTTP\Response;
 use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Test\FeatureResponse;
 use Config\App;
-use Vipul\CI3ToCI4Compatible\Test\TestCase\TestCase;
+use Durva\CI3ToCI4Compatible\Test\TestCase\TestCase;
 
 use function get_instance;
 use function strtolower;

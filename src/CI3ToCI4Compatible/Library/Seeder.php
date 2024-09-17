@@ -11,13 +11,13 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Library;
+namespace Durva\CI3ToCI4Compatible\Library;
 
 use CodeIgniter\Database\BaseConnection;
 use CodeIgniter\Database\Seeder as CI4Seeder;
 use Config\Database;
-use Vipul\CI3ToCI4Compatible\Database\CI_DB;
-use Vipul\CI3ToCI4Compatible\Database\CI_DB_forge;
+use Durva\CI3ToCI4Compatible\Database\CI_DB;
+use Durva\CI3ToCI4Compatible\Database\CI_DB_forge;
 
 use function array_map;
 use function is_array;

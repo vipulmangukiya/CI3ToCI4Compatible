@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Test\TestCase;
+namespace Durva\CI3ToCI4Compatible\Test\TestCase;
 
 use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Test\DatabaseTestTrait;
-use Vipul\CI3ToCI4Compatible\Test\Traits\ResetInstance;
+use Durva\CI3ToCI4Compatible\Test\Traits\ResetInstance;
 use Kenjis\PhpUnitHelper\TestDouble;
 
 class DbTestCase extends CIUnitTestCase

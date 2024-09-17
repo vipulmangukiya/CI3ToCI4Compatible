@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Database;
+namespace Durva\CI3ToCI4Compatible\Database;
 
 class CI_DB extends CI_DB_query_builder
 {

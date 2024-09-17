@@ -11,15 +11,15 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Library;
+namespace Durva\CI3ToCI4Compatible\Library;
 
 use CodeIgniter\HTTP\Files\UploadedFile;
 use CodeIgniter\Images\Exceptions\ImageException;
 use CodeIgniter\Images\Image;
 use Config\Services;
-use Vipul\CI3ToCI4Compatible\Exception\NotImplementedException;
-use Vipul\CI3ToCI4Compatible\Library\Upload\FileExtention;
-use Vipul\CI3ToCI4Compatible\Library\Upload\ValidationRuleMaker;
+use Durva\CI3ToCI4Compatible\Exception\NotImplementedException;
+use Durva\CI3ToCI4Compatible\Library\Upload\FileExtention;
+use Durva\CI3ToCI4Compatible\Library\Upload\ValidationRuleMaker;
 
 use function realpath;
 use function round;

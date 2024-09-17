@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core;
+namespace Durva\CI3ToCI4Compatible\Core;
 
 use CodeIgniter\Config\BaseConfig;
-use Vipul\CI3ToCI4Compatible\Exception\NotImplementedException;
-use Vipul\CI3ToCI4Compatible\Exception\RuntimeException;
+use Durva\CI3ToCI4Compatible\Exception\NotImplementedException;
+use Durva\CI3ToCI4Compatible\Exception\RuntimeException;
 
 use function array_key_exists;
 use function array_unshift;

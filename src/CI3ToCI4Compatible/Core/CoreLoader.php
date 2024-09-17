@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core;
+namespace Durva\CI3ToCI4Compatible\Core;
 
-use Vipul\CI3ToCI4Compatible\Core\Loader\ClassResolver\CoreResolver;
-use Vipul\CI3ToCI4Compatible\Core\Loader\ControllerPropertyInjector;
-use Vipul\CI3ToCI4Compatible\Internal\DebugLog;
+use Durva\CI3ToCI4Compatible\Core\Loader\ClassResolver\CoreResolver;
+use Durva\CI3ToCI4Compatible\Core\Loader\ControllerPropertyInjector;
+use Durva\CI3ToCI4Compatible\Internal\DebugLog;
 use ReflectionObject;
 
 use function array_change_key_case;

@@ -11,9 +11,9 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core\Loader\ClassResolver;
+namespace Durva\CI3ToCI4Compatible\Core\Loader\ClassResolver;
 
-use Vipul\CI3ToCI4Compatible\Core\Loader\InSubDir;
+use Durva\CI3ToCI4Compatible\Core\Loader\InSubDir;
 
 use function explode;
 use function implode;

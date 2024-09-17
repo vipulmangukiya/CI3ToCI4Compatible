@@ -11,10 +11,10 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core;
+namespace Durva\CI3ToCI4Compatible\Core;
 
 use Config\Services;
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
 
 use function explode;
 use function trim;

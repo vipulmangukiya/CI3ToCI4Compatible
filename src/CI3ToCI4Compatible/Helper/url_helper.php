@@ -14,7 +14,7 @@ declare(strict_types=1);
 use CodeIgniter\HTTP\URI;
 use CodeIgniter\Router\Exceptions\RedirectException;
 use Config\Services;
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
 
 if (! function_exists('base_url_')) {
     /**

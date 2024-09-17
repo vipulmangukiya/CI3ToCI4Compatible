@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Test\Traits;
+namespace Durva\CI3ToCI4Compatible\Test\Traits;
 
 use Config\Services;
-use Vipul\CI3ToCI4Compatible\Core\CI_Controller;
-use Vipul\CI3ToCI4Compatible\Core\CoreLoader;
+use Durva\CI3ToCI4Compatible\Core\CI_Controller;
+use Durva\CI3ToCI4Compatible\Core\CoreLoader;
 
 use function get_instance;
 

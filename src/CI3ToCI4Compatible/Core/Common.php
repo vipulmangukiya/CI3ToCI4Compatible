@@ -12,8 +12,8 @@ declare(strict_types=1);
  */
 
 use CodeIgniter\Exceptions\PageNotFoundException;
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
-use Vipul\CI3ToCI4Compatible\Exception\RuntimeException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\RuntimeException;
 
 if (! function_exists('show_error')) {
     /**

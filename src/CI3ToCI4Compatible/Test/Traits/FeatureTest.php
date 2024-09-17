@@ -11,9 +11,9 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Test\Traits;
+namespace Durva\CI3ToCI4Compatible\Test\Traits;
 
-use Vipul\CI3ToCI4Compatible\Test\TestRequest;
+use Durva\CI3ToCI4Compatible\Test\TestRequest;
 
 /**
  * @internal

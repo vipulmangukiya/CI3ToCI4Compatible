@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Database;
+namespace Durva\CI3ToCI4Compatible\Database;
 
 use CodeIgniter\Database\BaseBuilder;
 use CodeIgniter\Database\BaseResult;
-use Vipul\CI3ToCI4Compatible\Exception\LogicException;
+use Durva\CI3ToCI4Compatible\Exception\LogicException;
 
 use function array_shift;
 use function is_bool;

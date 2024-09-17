@@ -11,17 +11,17 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core;
+namespace Durva\CI3ToCI4Compatible\Core;
 
 use Config\Paths;
-use Vipul\CI3ToCI4Compatible\Core\Loader\ControllerPropertyInjector;
-use Vipul\CI3ToCI4Compatible\Core\Loader\DatabaseLoader;
-use Vipul\CI3ToCI4Compatible\Core\Loader\HelperLoader;
-use Vipul\CI3ToCI4Compatible\Core\Loader\LibraryLoader;
-use Vipul\CI3ToCI4Compatible\Core\Loader\ModelLoader;
-use Vipul\CI3ToCI4Compatible\Database\CI_DB;
-use Vipul\CI3ToCI4Compatible\Database\CI_DB_forge;
-use Vipul\CI3ToCI4Compatible\Exception\NotImplementedException;
+use Durva\CI3ToCI4Compatible\Core\Loader\ControllerPropertyInjector;
+use Durva\CI3ToCI4Compatible\Core\Loader\DatabaseLoader;
+use Durva\CI3ToCI4Compatible\Core\Loader\HelperLoader;
+use Durva\CI3ToCI4Compatible\Core\Loader\LibraryLoader;
+use Durva\CI3ToCI4Compatible\Core\Loader\ModelLoader;
+use Durva\CI3ToCI4Compatible\Database\CI_DB;
+use Durva\CI3ToCI4Compatible\Database\CI_DB_forge;
+use Durva\CI3ToCI4Compatible\Exception\NotImplementedException;
 
 use function array_keys;
 use function array_merge;

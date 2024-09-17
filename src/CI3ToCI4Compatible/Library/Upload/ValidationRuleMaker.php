@@ -11,9 +11,9 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Library\Upload;
+namespace Durva\CI3ToCI4Compatible\Library\Upload;
 
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
 
 use function explode;
 use function implode;

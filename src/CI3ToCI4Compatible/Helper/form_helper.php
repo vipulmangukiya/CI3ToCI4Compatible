@@ -12,7 +12,7 @@ declare(strict_types=1);
  */
 
 use Config\Services;
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
 
 if (! function_exists('form_error')) {
     /**

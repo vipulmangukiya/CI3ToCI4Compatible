@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-use Vipul\CI3ToCI4Compatible\Core\CI_Controller;
+use Durva\CI3ToCI4Compatible\Core\CI_Controller;
 
 loadTestBootstrap();
 new CI_Controller();

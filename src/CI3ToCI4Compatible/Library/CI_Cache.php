@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Library;
+namespace Durva\CI3ToCI4Compatible\Library;
 
 class CI_Cache
 {

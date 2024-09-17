@@ -11,12 +11,12 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Core;
+namespace Durva\CI3ToCI4Compatible\Core;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
-use Vipul\CI3ToCI4Compatible\Internal\DebugLog;
+use Durva\CI3ToCI4Compatible\Internal\DebugLog;
 use Psr\Log\LoggerInterface;
 
 /**

@@ -1,5 +1,5 @@
 {
-    "name": "vipul/ci3-to-ci4-compatible",
+    "name": "durva/ci3-to-ci4-compatible",
     "description": "A package to help migrate CodeIgniter 3 projects to CodeIgniter 4 with additional compatibility features",
     "type": "library",
     "license": "MIT",

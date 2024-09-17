@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-namespace Vipul\CI3ToCI4Compatible\Database;
+namespace Durva\CI3ToCI4Compatible\Database;
 
 use CodeIgniter\Database\BaseConnection;
-use Vipul\CI3ToCI4Compatible\Exception\NotImplementedException;
-use Vipul\CI3ToCI4Compatible\Exception\NotSupportedException;
+use Durva\CI3ToCI4Compatible\Exception\NotImplementedException;
+use Durva\CI3ToCI4Compatible\Exception\NotSupportedException;
 
 use function is_bool;
 
