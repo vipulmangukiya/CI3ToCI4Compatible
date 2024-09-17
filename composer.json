@@ -21,7 +21,7 @@
             "Vipul\\CI3ToCI4Compatible\\": "src/CI3ToCI4Compatible"
         },
         "files": [
-            "src/CI3Compatible/bootstrap.php"
+            "src/CI3ToCI4Compatible/bootstrap.php"
         ]
     },
     "autoload-dev": {
