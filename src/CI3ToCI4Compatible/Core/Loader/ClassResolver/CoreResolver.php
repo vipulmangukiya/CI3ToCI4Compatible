@@ -16,7 +16,7 @@ namespace Durva\CI3ToCI4Compatible\Core\Loader\ClassResolver;
 class CoreResolver
 {
     /** @var string */
-    private $ci3CoreNamespace = 'Kenjis\CI3ToCI4Compatible\Core';
+    private $ci3CoreNamespace = 'Durva\CI3ToCI4Compatible\Core';
 
     /** @var string */
     private $prefix = 'CI_';

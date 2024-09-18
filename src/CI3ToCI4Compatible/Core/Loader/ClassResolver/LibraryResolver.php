@@ -25,7 +25,7 @@ class LibraryResolver
     use InSubDir;
 
     /** @var string */
-    private $ci3LibraryNamespace = 'Kenjis\CI3ToCI4Compatible\Library';
+    private $ci3LibraryNamespace = 'Durva\CI3ToCI4Compatible\Library';
 
     /** @var string[] */
     private $ci3Libraries = [

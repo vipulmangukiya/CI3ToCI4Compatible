@@ -25,11 +25,11 @@ new CI_Controller();
  * for your application.
  */
 /*
-use Kenjis\MonkeyPatch\Exception\ExitException;
-use Kenjis\MonkeyPatch\MonkeyPatchManager;
-use Kenjis\MonkeyPatch\Patcher\ConstantPatcher\Proxy as ConstProxy;
-use Kenjis\MonkeyPatch\Patcher\FunctionPatcher\Proxy as FuncProxy;
-use Kenjis\MonkeyPatch\Patcher\MethodPatcher\PatchManager;
+use Durva\MonkeyPatch\Exception\ExitException;
+use Durva\MonkeyPatch\MonkeyPatchManager;
+use Durva\MonkeyPatch\Patcher\ConstantPatcher\Proxy as ConstProxy;
+use Durva\MonkeyPatch\Patcher\FunctionPatcher\Proxy as FuncProxy;
+use Durva\MonkeyPatch\Patcher\MethodPatcher\PatchManager;
 
 const __GO_TO_ORIG__ = '__GO_TO_ORIG__';
 

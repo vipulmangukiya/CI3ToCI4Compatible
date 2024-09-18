@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/vipulmangukiya/CI3ToCI4Compatible
  */
 
-use Kenjis\CI3Like\Captcha\Captcha;
+use Durva\CI3Like\Captcha\Captcha;
 
 if (! function_exists('create_captcha')) {
     /**

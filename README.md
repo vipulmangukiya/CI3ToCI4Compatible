@@ -26,3 +26,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License.
+
+## Acknowledgments
+
+This project wouldn't have been possible without the fantastic work of the [ci3-to-4-upgrade-helper](https://github.com/kenjis/ci3-to-4-upgrade-helper) team. Some parts of the code have been borrowed and adapted from their repository.
+
+Be sure to check out the original repository here: [ci3-to-4-upgrade-helper](https://github.com/kenjis/ci3-to-4-upgrade-helper).
+

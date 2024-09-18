@@ -16,7 +16,7 @@ namespace Durva\CI3ToCI4Compatible\Test\TestCase;
 use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Test\DatabaseTestTrait;
 use Durva\CI3ToCI4Compatible\Test\Traits\ResetInstance;
-use Kenjis\PhpUnitHelper\TestDouble;
+use Durva\PhpUnitHelper\TestDouble;
 
 class DbTestCase extends CIUnitTestCase
 {

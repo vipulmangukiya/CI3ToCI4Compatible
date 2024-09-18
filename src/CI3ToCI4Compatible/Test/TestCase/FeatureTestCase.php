@@ -19,7 +19,7 @@ use CodeIgniter\Test\FeatureTestTrait;
 use Durva\CI3ToCI4Compatible\Test\Traits\FeatureTest;
 use Durva\CI3ToCI4Compatible\Test\Traits\ResetInstance;
 use Durva\CI3ToCI4Compatible\Test\Traits\SessionTest;
-use Kenjis\PhpUnitHelper\TestDouble;
+use Durva\PhpUnitHelper\TestDouble;
 
 class FeatureTestCase extends CIUnitTestCase
 {
