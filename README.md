@@ -7,12 +7,8 @@ This package extends the functionality of ci3-to-ci4-compatible to provide addit
 You can install this package via Composer:
 
 ```
-composer require vipul/ci3-to-ci4-compatible
+composer require durva/ci3-to-ci4-compatible
 ```
-
-## Usage
-
-[Provide instructions on how to use your package here]
 
 ## Features
 

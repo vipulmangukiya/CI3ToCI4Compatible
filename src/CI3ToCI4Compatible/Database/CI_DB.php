@@ -49,11 +49,26 @@ class CI_DB extends CI_DB_query_builder
 
 		return $this;
 	}
-
+    
+    /**
+	 * Escape LIKE String
+	 *
+	 * Calls the individual driver for platform
+	 * specific escaping for LIKE conditions
+	 *
+	 * @param	string|string[]
+	 * @return	mixed
+	 */
     public function escape_like_str($str)
 	{
 		return $this->escape_str($str, TRUE);
 	}
+    /**
+	 * Platform-dependent string escape
+	 *
+	 * @param	string
+	 * @return	string
+	 */
     protected function escape_str($str)
 	{
 		return str_replace("'", "''", remove_invisible_characters($str, FALSE));
