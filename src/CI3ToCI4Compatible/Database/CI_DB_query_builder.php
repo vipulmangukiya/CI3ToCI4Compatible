@@ -192,6 +192,79 @@ class CI_DB_query_builder extends CI_DB_driver
     }
 
     /**
+     * UPDATE BATCH
+     *
+     * Compiles an update string and runs the query.
+     *
+     * @param   string $table
+     * @param   array  $set   An associative array of update values
+     * @param   string $index
+     * @param   int    $batch_size
+     *
+     * @return  int    return affected rows count
+     */
+    public function update_batch($table, $data, $index, $batch_size = 100)
+    {
+        if (empty($data) || !isset($index)) {
+            return false; 
+        }
+
+        $this->ensureQueryBuilder($table);
+        
+        $affectedRows = 0;
+        
+        $total = count($data);
+        
+        for ($i = 0; $i < $total; $i += $batch_size) {
+            $batchData = array_slice($data, $i, $batch_size);
+            $sql = $this->_update_batch($table, $batchData, $index);
+
+            if ($sql) {
+                $this->db->query($sql);
+                $affectedRows += $this->db->affectedRows();
+            }
+        }
+
+        return $affectedRows;
+    }
+
+    private function _update_batch($table, $data, $index)
+    {
+        $ids = [];
+        $final = [];
+
+        foreach ($data as $row) {
+            if (!isset($row[$index])) {
+                continue;
+            }
+
+            $ids[] = $row[$index];
+
+            foreach ($row as $key => $value) {
+                if ($key !== $index) {
+                    $final[$key][] = "WHEN {$index} = '{$row[$index]}' THEN '{$value}'";
+                }
+            }
+        }
+
+        if (empty($ids)) {
+            return false;
+        }
+
+        $cases = '';
+        foreach ($final as $field => $caseStatements) {
+            $cases .= "{$field} = CASE\n" . implode("\n", $caseStatements) . "\nELSE {$field} END, ";
+        }
+
+        $idsList = implode(',', $ids);
+        $cases = rtrim($cases, ', '); 
+        $sql = "UPDATE {$table} SET {$cases} WHERE {$index} IN ({$idsList})";
+
+        return $sql;
+    }
+
+
+    /**
      * The "set" function.
      *
      * Allows key/value pairs to be set for inserting or updating
