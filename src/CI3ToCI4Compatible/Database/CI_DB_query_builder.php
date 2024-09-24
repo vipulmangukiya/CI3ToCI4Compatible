@@ -332,8 +332,11 @@ class CI_DB_query_builder extends CI_DB_driver
      *
      * @return  CI_DB_query_builder
      */
-    public function where_in(?string $key = null, ?array $values = null, ?bool $escape = null)
+    public function where_in(?string $key = null, $values = null, ?bool $escape = null)
     {
+        if(!is_array($values) && !empty($values)) {
+            $values = explode(',', $values);
+        }
         $this->where[] = ['whereIn', $key, $values, $escape];
 
         return $this;
