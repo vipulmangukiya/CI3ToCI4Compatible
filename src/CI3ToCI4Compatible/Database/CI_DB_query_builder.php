@@ -837,4 +837,93 @@ class CI_DB_query_builder extends CI_DB_driver
 
         return $this;
     }
+    
+    /**
+     * HAVING
+     *
+     * Separates multiple calls with 'AND'.
+     *
+     * @param	string	$key
+     * @param	string	$value
+     * @param	bool	$escape
+     * @return	BaseBuilder
+     */
+    public function having($key, $value = NULL, $escape = NULL)
+    {
+        return $this->_wh('having', $key, $value, 'AND ', $escape);
+    }
+
+    // --------------------------------------------------------------------
+
+    /**
+     * OR HAVING
+     *
+     * Separates multiple calls with 'OR'.
+     *
+     * @param	string	$key
+     * @param	string	$value
+     * @param	bool	$escape
+     * @return	BaseBuilder
+     */
+    public function or_having($key, $value = NULL, $escape = NULL)
+    {
+        return $this->_wh('having', $key, $value, 'OR ', $escape);
+    }
+
+    /**
+     * WHERE, HAVING helper
+     *
+     * Handles both WHERE and HAVING conditions.
+     *
+     * @param	string	$qb_key	'having' or 'where'
+     * @param	mixed	$key
+     * @param	mixed	$value
+     * @param	string	$type
+     * @param	bool	$escape
+     * @return	BaseBuilder
+     */
+    protected function _wh($qb_key, $key, $value = NULL, $type = 'AND ', $escape = NULL)
+    {
+        // The $escape parameter will follow global settings if not explicitly defined
+        $escape = is_bool($escape) ? $escape : $this->db->protectIdentifiers;
+
+        if (!is_array($key)) {
+            $key = [$key => $value];
+        }
+
+        foreach ($key as $k => $v) {
+            // Get prefix based on whether there are existing conditions
+            $prefix = (empty($this->$qb_key)) ? '' : $type;
+
+            // Handle the value and condition appropriately
+            if ($v !== NULL) {
+                if ($escape === TRUE) {
+                    $v = $this->db->escape($v);
+                }
+
+                if (!$this->_hasOperator($k)) {
+                    $k .= ' = ';
+                }
+            } elseif (!$this->_hasOperator($k)) {
+                $k .= ' IS NULL';
+            }
+
+            // Build condition and add it to the builder
+            ${$qb_key} = ['condition' => $prefix . $k, 'value' => $v];
+            $this->$qb_key[] = ${$qb_key};
+        }
+
+        return $this;
+    }
+
+    /**
+     * Check if the string has a SQL operator
+     *
+     * @param string $str
+     * @return bool
+     */
+    protected function _hasOperator($str)
+    {
+        return (bool) preg_match('/(<|>|!|=|\sIS\s)/i', trim($str));
+    }
 }
