@@ -26,6 +26,6 @@ class CI_URI
 	public function segment($n, $no_result = NULL)
 	{   
         $segments = service('uri')->getSegments();
-		return isset($this->segments[$n]) ? $this->segments[$n] : $no_result;
+		return isset($segments[$n]) ? $segments[$n] : $no_result;
 	}
 }
