@@ -39,8 +39,9 @@ class CI_Session
                 . ' See <https://codeigniter4.github.io/CodeIgniter4/libraries/sessions.html#session-preferences>.'
             );
         }
-
-        $this->session = Services::session($params);
+        if (!is_cli()) {
+            $this->session = Services::session($params);
+        }
     }
 
     /**
